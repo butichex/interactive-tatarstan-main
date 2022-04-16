@@ -81,6 +81,7 @@ a {
 }
 
 .card {
+  cursor: pointer;
   -webkit-box-flex: 1;
       -ms-flex: 1 0 25%;
           flex: 1 0 25%;
