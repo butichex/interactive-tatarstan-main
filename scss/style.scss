@@ -1,0 +1,155 @@
+@import url(https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900);
+
+
+
+body {
+    font-family: Inter;
+    font-size  : 1rem;
+    color      : black;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1200px;
+    margin   : 0 auto;
+}
+
+
+.header {
+    height: 160px;
+    width : 100%;
+
+    &__inner {
+        height     : 100%;
+        display    : flex;
+        align-items: center;
+
+    }
+
+    &__logo {
+        width : 280px;
+        height: 50px;
+
+    }
+}
+
+
+
+.title {
+    font-family: 'Inter';
+    font-style : normal;
+    font-weight: 500;
+    font-size  : 50px;
+    line-height: 110.02%;
+    /* or 77px */
+
+
+    color: #101010;
+}
+
+
+
+.intro__title {
+    max-width: 600px;
+    margin   : 0px 0px 18px 0px;
+}
+
+
+.intro__desc {
+    max-width: 1100px;
+    font-size: 16px;
+}
+
+
+
+
+.cards {
+    margin: 48px;
+
+
+    &__inner {
+        display       : flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap           : 32px;
+    }
+
+}
+
+
+a {
+    all: unset;
+}
+
+
+.card {
+    flex: 0 0 25%;
+    background   : #FFFFFF;
+    box-shadow   : 0px 8px 24px rgba(0, 167, 157, 0.13);
+    border-radius: 25px;
+    padding      : 24px 36px 24px 24px;
+
+    &__icon {
+        width : 48px;
+        height: 48px;
+    }
+
+
+    &__title {
+        font-family: 'Inter';
+        font-style : normal;
+        font-weight: 500;
+        font-size  : 25px;
+        line-height: 110.02%;
+        /* identical to box height, or 50px */
+
+        margin: 16px 0px 16px 0px;
+        color : #101010;
+    }
+
+
+    &__desc {
+        font-family: 'Inter';
+        font-style : normal;
+        font-weight: 500;
+        font-size  : 18px;
+        line-height: 110.02%;
+        /* or 31px */
+
+
+        color    : #888888;
+        max-width: 390px;
+
+    }
+
+}
+a {
+    color: black;
+    text-decoration: none; /* no underline */
+  }
+
+.card:hover {
+    transform: translateY(-10%);
+    transition: all 0.3s ease
+}
+
+.mtitle {
+    font-family: 'Inter';
+    font-style : normal;
+    font-weight: 500;
+    font-size  : 45px;
+    line-height: 110.02%;
+}
+
+.desc {
+    font-family: 'Inter';
+    font-style : normal;
+    font-weight: 500;
+    font-size  : 24px;
+    line-height: 110.02%;
+    /* or 35px */
+
+
+    color: #101010;
+
+}
