@@ -6,11 +6,11 @@ body {
     font-family: Inter;
     font-size  : 1rem;
     color      : black;
-    box-sizing: border-box;
+    box-sizing : border-box;
 }
 
 .container {
-    padding: 0px 30px; 
+    padding  : 0px 30px;
     max-width: 1140px;
     margin   : 0 auto;
 }
@@ -78,7 +78,7 @@ body {
     &__inner {
         display       : flex;
         flex-direction: row;
-        flex-wrap: wrap;
+        flex-wrap     : wrap;
         gap           : 32px;
     }
 
@@ -87,18 +87,18 @@ body {
 
 a {
     text-decoration: none;
-    color: black;
-    display: block;
+    color          : black;
+    display        : block;
 }
 
 
 .card {
-    cursor: pointer;
-    flex: 1 0 25%;
+    cursor       : pointer;
+    flex         : 1 0 25%;
     background   : #FFFFFF;
     box-shadow   : 0px 8px 24px rgba(0, 167, 157, 0.13);
     border-radius: 25px;
-    padding      : 24px 0px 24px 24px;
+    padding      : 24px 24px 24px 24px;
 
     &__icon {
         width : 48px;
@@ -134,13 +134,15 @@ a {
     }
 
 }
+
 a {
-    color: black;
-    text-decoration: none; /* no underline */
-  }
+    color          : black;
+    text-decoration: none;
+    /* no underline */
+}
 
 .card:hover {
-    transform: translateY(-10%);
+    transform : translateY(-10%);
     transition: all 0.3s ease
 }
 
@@ -167,10 +169,18 @@ a {
 
 
 
-@media screen and (max-width: 1020px){
+@media screen and (max-width: 1020px) {
     .card {
-        flex: 0 0 100%; 
+        flex: 0 0 100%;
 
     }
-    
+}
+
+
+
+@media screen and (max-width: 425px) {
+    .header__logo {
+        width: 300px;
+
+    }
 }
