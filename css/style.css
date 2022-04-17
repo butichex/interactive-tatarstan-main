@@ -80,11 +80,22 @@ a {
   display: block;
 }
 
+.poster {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  border-radius: 25px 25px 0px 0px;
+  z-index: 0;
+}
+
 .card {
+  position: relative;
+  height: 340px;
   cursor: pointer;
-  -webkit-box-flex: 1;
-      -ms-flex: 1 0 25%;
-          flex: 1 0 25%;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 33%;
+          flex: 0 0 33%;
   background: #FFFFFF;
   -webkit-box-shadow: 0px 8px 24px rgba(0, 167, 157, 0.13);
           box-shadow: 0px 8px 24px rgba(0, 167, 157, 0.13);
@@ -98,22 +109,31 @@ a {
 }
 
 .card__title {
+  z-index: 100;
+  position: absolute;
+  left: 30px;
+  top: 75%;
   font-family: 'Inter';
   font-style: normal;
   font-weight: 500;
   font-size: 25px;
   line-height: 110.02%;
   /* identical to box height, or 50px */
-  margin: 16px 0px 16px 0px;
+  margin: 0px 0px 16px 0px;
   color: #101010;
 }
 
 .card__desc {
+  z-index: 100;
+  position: absolute;
+  left: 30px;
+  top: 85%;
   font-family: 'Inter';
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
   line-height: 110.02%;
+  margin: 0px 16px 0px 0px;
   /* or 31px */
   color: #888888;
   max-width: 390px;
